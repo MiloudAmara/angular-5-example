@@ -40,7 +40,7 @@ pipeline{
       steps{
         sh '''
           rm -rf node_modules
-          oc start-build angular-5-example --from-dir=. --follow -n angular
+          oc start-build angular-5-example-rhel --from-dir=. --follow -n angular
         '''
       }
     }
